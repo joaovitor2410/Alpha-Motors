@@ -1,0 +1,609 @@
+/* GERAIS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    position: fixed;      
+    width: 100%;
+    padding: 0;
+    z-index: 1000;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+    scroll-margin-top: 120px;
+}
+
+/* HEADER */
+.menu {
+    background-color: rgb(28, 28, 28);
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.menu_nav {
+    display: flex;
+    align-items: center;
+}
+
+.menu_nav a {
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+    border: solid 2px white;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 30px;
+    padding: 7px 20px;
+    transition: all 0.3s;
+}
+
+.menu_nav a:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.nome_logo {
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+    margin: 10px;
+}
+
+.logo_menu {
+    width: 120px;
+    height: 90px;
+    margin: 10px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.darktheme {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: solid 3px white;
+    margin-right: 25px; 
+    transition: border-color 0.3s;
+}
+
+.logo_grupo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+main {
+    background: linear-gradient(180deg, #f8f9fa 0%, #ffffff 100%);
+    width: 100%;
+    padding-bottom: 80px;
+}
+
+.hero-section {
+    text-align: center;
+    padding: 130px 20px 40px;
+}
+
+.titulo1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 56px;
+    margin-bottom: 30px;
+    color: #1a1a1a;
+}
+
+.titulo1_2 {
+    color: rgb(77, 77, 113);
+    font-weight: bold;
+}
+
+.img_main {
+    display: block;
+    margin: 40px auto;
+    width: 600px;
+    max-width: 90%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
+.p1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 24px;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto 50px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.caixas1_main_ajuste {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    margin-bottom: 80px;
+}
+
+.caixas1_main {
+    background: linear-gradient(135deg, #4a5568 0%, #2d3748 100%);
+    color: white;
+    padding: 30px 40px;
+    border-radius: 15px;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: all 0.5s;
+    width: 350px;
+}
+
+.caixas1_main:hover {
+    transform: translateY(-10px);
+}
+
+/* SOBRE */
+.sobre-section {
+    max-width: 1200px;
+    margin: 100px auto;
+    padding: 80px 20px;
+    background: white;
+    border-radius: 30px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+}
+
+.sobre-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+}
+
+.sobre-texto h3 {
+    font-size: 28px;
+    color: rgb(77, 77, 113);
+    margin-bottom: 15px;
+    margin-top: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.sobre-texto h3:first-child {
+    margin-top: 0;
+}
+
+.sobre-texto p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.sobre-texto ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sobre-texto ul li {
+    font-size: 16px;
+    color: #555;
+    padding: 10px 0;
+    line-height: 1.6;
+}
+
+.sobre-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.stat-card {
+    background: linear-gradient(135deg, rgb(77, 77, 113) 0%, rgb(60, 60, 90) 100%);
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 10px 30px rgba(77, 77, 113, 0.3);
+    transition: all 0.3s;
+}
+
+.stat-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(77, 77, 113, 0.5);
+}
+
+.stat-numero {
+    font-size: 56px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.stat-texto {
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+/* SERVIÇOS */
+.servicos-section {
+    max-width: 1200px;
+    margin: 100px auto;
+    padding: 80px 20px;
+    background: white;
+    border-radius: 30px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+}
+
+.section-title {
+    text-align: center;
+    font-size: 48px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #1a1a1a;
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.servicos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-bottom: 80px;
+}
+
+.servico-card {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.3s;
+    border: 2px solid transparent;
+}
+
+.servico-card:hover {
+    transform: translateY(-10px);
+    border-color: rgb(77, 77, 113);
+}
+
+.servico-icon {
+    font-size: 64px;
+    margin-bottom: 20px;
+}
+
+.servico-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: rgb(77, 77, 113);
+    margin-bottom: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.servico-desc {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* ESTOQUE */
+.estoque-section {
+    max-width: 1500px;
+    margin: 100px auto;
+    padding: 80px 20px;
+    background: white;
+    border-radius: 30px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+}
+
+.carros-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.carro-card {
+    background: #f8f9fa;
+    border-radius: 30px;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+.carro-card:hover {
+    transform: translateY(-10px);
+}
+
+.carro-img {
+    height: 580px;
+    display: flex;
+    justify-content: center;
+}
+
+.carro-info {
+    padding: 25px;
+}
+
+.carro-nome {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1a1a1a;
+    margin-bottom: 10px;
+}
+
+.carro-detalhes {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.carro-preco {
+    font-size: 28px;
+    font-weight: bold;
+    color: rgb(77, 77, 113);
+}
+
+/* CONTATO */
+.contato-section {
+    max-width: 1200px;
+    margin: 100px auto;
+    padding: 80px 20px;
+    background: white;
+    border-radius: 30px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+}
+
+.contato-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+}
+
+.contato-info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contato-item {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    padding: 25px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+}
+
+.contato-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.contato-icon {
+    font-size: 40px;
+    min-width: 50px;
+}
+
+.contato-texto h4 {
+    font-size: 18px;
+    color: rgb(77, 77, 113);
+    margin-bottom: 5px;
+}
+
+.contato-texto p {
+    font-size: 16px;
+    color: #555;
+    margin: 2px 0;
+}
+
+.contato-form {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.contato-form h3 {
+    font-size: 28px;
+    color: rgb(77, 77, 113);
+    margin-bottom: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.contato-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contato-form input,
+.contato-form textarea {
+    padding: 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: all 0.3s;
+}
+
+.contato-form input:focus,
+.contato-form textarea:focus {
+    outline: none;
+    border-color: rgb(77, 77, 113);
+}
+
+.btn-enviar {
+    padding: 15px 40px;
+    background: linear-gradient(135deg, rgb(77, 77, 113) 0%, rgb(60, 60, 90) 100%);
+    color: white;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 10px 30px rgba(77, 77, 113, 0.3);
+}
+
+.btn-enviar:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 40px rgba(77, 77, 113, 0.5);
+}
+
+footer {
+    color: white;
+    background-color: black;
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+}
+
+/* DARK MODE */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+body.dark-mode main {
+    background: #121212;
+}
+body.dark-mode .menu {
+    background-color: #1c1c1c; 
+    border-bottom: 1px solid #333;
+}
+
+body.dark-mode .nome_logo {
+    color: white;
+}
+
+body.dark-mode .menu_nav a {
+    color: #e0e0e0;
+    border-color: #e0e0e0;
+}
+
+body.dark-mode .menu_nav a:hover {
+    background-color: #e0e0e0;
+    color: #121212;
+}
+
+body.dark-mode .darktheme {
+    border-color: white;
+}
+
+body.dark-mode .titulo1,
+body.dark-mode .section-title,
+body.dark-mode .sobre-texto h3,
+body.dark-mode .servico-title,
+body.dark-mode .carro-nome,
+body.dark-mode .contato-form h3 {
+    color: white;
+}
+
+body.dark-mode .titulo1_2 {
+    color: #9090c0;
+}
+
+body.dark-mode .p1,
+body.dark-mode .sobre-texto p,
+body.dark-mode .sobre-texto ul li,
+body.dark-mode .servico-desc,
+body.dark-mode .carro-detalhes,
+body.dark-mode .contato-texto p {
+    color: #b0b0b0;
+}
+
+body.dark-mode .sobre-section,
+body.dark-mode .servicos-section,
+body.dark-mode .estoque-section,
+body.dark-mode .contato-section {
+    background: #1c1c1c;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+}
+
+body.dark-mode .servico-card,
+body.dark-mode .contato-item,
+body.dark-mode .contato-form {
+    background: #252525;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+body.dark-mode .carro-card {
+    background: #252525;
+}
+
+body.dark-mode .contato-form input,
+body.dark-mode .contato-form textarea {
+    background: #333;
+    border-color: #555;
+    color: white;
+}
+
+body.dark-mode .contato-form input:focus,
+body.dark-mode .contato-form textarea:focus {
+    border-color: #9090c0;
+}
+
+body.dark-mode footer {
+    background-color: #0a0a0a;
+    color: #aaa;
+}
+
+/* ICONE WHATSAPP */
+.icon_whatsapp {
+    position: fixed;
+    bottom: 30px; 
+    right: 30px;
+    object-fit: cover;
+    z-index: 1000; 
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+.icon_whatsapp img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); 
+}
+.icon_whatsapp:hover {
+    transform: scale(1.1);
+}
+
+/* INFORMAÇOES ADICIONAIS DO CARRO */
+.carro-tooltip {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.85);
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 10px;
+    font-size: 14px;
+    max-width: 250px;
+    z-index: 10;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+}
+
+/* Aparecer suavemente */
+.carro-card:hover .carro-tooltip {
+    opacity: 1;
+    transform: translateY(-20px);
+}
+
+/* Ajuste para o modo escuro */
+body.dark-mode .carro-tooltip {
+    background: rgba(255, 255, 255, 0.9);
+    color: #121212;
+}
